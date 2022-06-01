@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">   
+    <link rel="stylesheet" href="css/index.css">
+    <title>Canaan Kachin Baptist Church</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="HOME.html" class="go-home">
+                <img id="logo" src="assets/CKBC LOGO 2021.png" width="150px" height="150px" alt="CKBC logo">
+            </a>
+            <img id="open-menu" class="menu" src="assets/menu.svg" alt="menu">
+            <nav>
+                <img id="exit" class="menu-exit" src="assets/exit.svg" alt="menu">
+
+                <ul class="primary-nav">
+                    <li><a href="HOME.html" alt="home">HOME</a></li>
+                    <li><a href="EVENTS.html" alt="events">EVENTS</a></li>
+                    <li><a href="CONTACT.html" alt="contact"><b>CONTACT</b></a></li>
+                    <li><a href="ABOUT.html" alt="about us">ABOUT</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="go-vist-cta"><a href="#"></a></li>
+                </ul>
+
+                <select id="language">
+                    <option value="0">English</option>
+                    <option value="1">Kachin</option>
+                    <option value="2">Burmese</option>
+                </select>
+                <div id="google_translate_element"></div>
+            </nav>
+        </div>
+    </div>
+
+        <section class="contact-container">
+            <div class="ckbc-contact">
+                <div class="ckbc-profile">
+                    <img id="ckbc-pic" src="assets/CKBC LOGO 2021.png" width="195px" height="195px" alt="CKBC logo">
+                </div>     
+                <h2>Canaan Kachin Baptist Church</h2>
+                <p>Email: <a href = "mailto: ckbc2015@gmail.com">ckbc2015@gmail.com</a> </p>
+            </div>
+            <div class="ckbc-contact">
+                <div class="ckbc-profile">
+                    <img id="ckbc-pic" src="assets/CKBC LOGO 2021.png" width="195px" height="195px" alt="CKBC logo">
+                </div>
+                <h2>Rev. Dr. Pawlu Nhkum</h2>
+                <p>Email: <a href = "mailto: paulnhkum@gmail.com">paulnhkum@gmail.com</a> </p>  
+                <p>Phone: (717) 205-7176</p>          
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            const menuBtn = document.getElementById('open-menu')
+                  nav = document.querySelector('nav')
+                  exitBtn = document.getElementById('exit')
+
+            menuBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+             })
+
+            exitBtn.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+        </script>
+</body>
+</html>

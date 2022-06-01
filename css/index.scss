@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+:root{
+    --green-color: #85CA57;
+}
+
+body{
+    background: white;
+    margin:0;
+    font-family: 'Fredoka';
+}
+
+.navbar{
+    background: var(--green-color);
+    padding: 1em;
+
+    .go-home{
+        cursor: pointer;
+    }
+
+    nav{
+        display: none;
+    }
+    
+    .container{
+        display:flex;
+        place-content: space-between;
+    }
+
+    .menu{
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+a{
+    color: black;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+.welcome{
+    text-align: center;
+    h1{
+        font-size: 3em;
+        line-height: 1em;
+        margin-top:  1em;
+    }
+}
+
+nav.menu-btn{
+    display:block;
+} 
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: gray;
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav{
+        margin-top: 5em;
+    }
+
+    li{
+        a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.menu-exit{
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px){
+    .menu, .menu-exit {
+        display:none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 3.5em 0 0 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: black;
+            font-size: 1.5em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+
+        li.go-vist-cta a {
+            color: gray;
+            border: 3px solid gray;
+            font-weight: bold;
+            border-radius: 5em;
+            margin-top: -.2em;
+
+            &:hover {
+                background: gray;
+                color: white;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .welcome .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col {
+            margin: 3em 3em 0 5em;
+
+            h1 {
+                font-size: 3em;
+                width: 90%;
+            }
+        }
+    }
+
+    .h-img {
+        width: 30%;
+        margin-right: 8em;
+    }
+
+    .welcome-cta {
+        display: flex;
+    }
+    .primary-cta {
+        margin-right: 1em;
+    }
+}

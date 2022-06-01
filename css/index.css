@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+:root {
+  --green-color: #85CA57;
+}
+
+body {
+  background: white;
+  margin: 0;
+  font-family: 'Fredoka';
+}
+
+.navbar {
+  background: var(--green-color);
+  padding-right: 1em;
+}
+
+.navbar .go-home {
+  cursor: pointer;
+}
+
+.navbar nav {
+  display: none;
+  margin: -10em 1em 1em 10em;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .menu {
+  cursor: pointer;
+}
+
+#language{
+  background-color: transparent;
+  font-family: 'Fredoka';
+  font-size: 20px;
+  margin-top: 0em;
+  border-color: transparent;
+  border-radius: 1em;
+}
+a {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.welcome {
+  text-align: center;
+  background-image: url("https://as2.ftcdn.net/v2/jpg/02/42/31/45/1000_F_242314567_nzCkausTdFcpjCLKMdin8pIZgD3IKUlx.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 125em 70em;
+  height: 50em auto;
+}
+.welcome h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-top: 1em;
+}
+
+.home-LB{
+  background-color: #85CA57;
+  width: 400px auto;
+  height: 400px auto;
+  margin: 1em auto;
+}
+.home-RB{
+  background-color: black;
+  width:400px;
+  height: 400px;
+  padding: .5em;
+  margin:1em auto;
+}
+#text-box{
+  height: 5em;
+}
+.user-info{
+  margin: 1em 1em 0em 1em;
+}
+#email{
+  margin-left: 2.8em;
+}
+#submit{
+  margin: 0em 1em 1em 1em ;
+}
+
+.eventLists h1{
+  text-align: center;
+  font-size: 3em;
+  line-height: 1em;
+  margin-top: 1em;
+}
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 10em;
+  background: gray;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a  {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+/*Contact.htm*/
+.ckbc-profile {
+  background-color: black;
+  width:200px;
+  height:200px;
+}
+.ckbc-profile img{
+  background-color: white;
+  padding: 0em;
+  margin: .1em .1em .1em .1em;
+}
+
+@media only screen and (min-width: 900px) {
+  .menu, .menu-exit {
+    display: none;
+  }
+  .navbar .container .home-bottom{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+    grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+  }
+  .navbar nav  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 3.5em 0 0 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1.5em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.go-vist-cta a {
+    color: gray;
+    border: 3px solid gray;
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -.2em;
+  }
+  .navbar nav li.go-vist-cta a:hover {
+    background: gray;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .home-RB{
+    margin: -30em 1em 1em 20em;
+  }
+  .home-LB{
+    width: 40%;
+    margin: 1em 1em 1em -5em;
+  }
+  .home-bottom{
+    margin: 0em;
+  }
+  .go-home{
+    margin-left: 0em;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .go-home{
+    margin-right: 10em;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .home-RB{
+    margin: -35.7em 1em 1em 35em;
+  }
+  .home-LB{
+    width: 50%;
+    margin: 1em 1em 1em -3em;
+  }
+  #email{
+    margin-left: 1em;
+  }
+  .user-info{
+    width: 300px;
+  }
+  .welcome .container .eventLists{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .welcome .eventLists .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .welcome .eventLists .container .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .h-img {
+    width: 30%;
+    margin-right: 8em;
+  }
+  .welcome-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .primary-cta{
+    margin-right: 1em;
+  }
+}
+/*# sourceMappingURL=index.css.map */
