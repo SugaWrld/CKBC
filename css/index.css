@@ -58,11 +58,11 @@ section {
 
 .welcome {
   text-align: center;
-  background-image: url("https://as2.ftcdn.net/v2/jpg/02/42/31/45/1000_F_242314567_nzCkausTdFcpjCLKMdin8pIZgD3IKUlx.jpg");
+  background-image: url("https://www.clearwaycommunitysolar.com/wp-content/uploads/2019/03/iStock-956366756-1024x683.jpg");
   background-repeat: no-repeat;
   background-position: center; 
-  background-size: 125em 70em;
-  height: 50em auto;
+  background-size: auto;
+  height: 40em;
 }
 .welcome h1 {
   font-size: 3em;
@@ -155,7 +155,10 @@ nav li a:hover {
   .menu, .menu-exit {
     display: none;
   }
-  .navbar .container .home-bottom{
+  .welcome{
+    background-size: 110em 100vh;
+  }
+  .navbar .container .home-bottom {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 180px auto;
@@ -164,7 +167,7 @@ nav li a:hover {
     -ms-flex-pack: unset;
     justify-content: unset;
   }
-  .navbar nav  {
+  .navbar nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
