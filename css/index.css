@@ -211,6 +211,27 @@ nav li a:hover {
     background: gray;
     color: white;
   }
+  
+  .bottom{
+    text-align: center;
+    margin:auto;
+  }
+
+
+}
+
+@media only screen and (min-width:400px ){
+
+  .bottom{
+    text-align: center;
+  }
+
+  #facebook-icon{
+    margin-left: 4.5em;
+  }
+  #copyright{
+    margin-left: -2em;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
