@@ -70,6 +70,13 @@ section {
   margin-top: 1em;
 }
 
+#copyright{
+  margin: 1em 1em 1em 8em;
+}
+#facebook-icon{
+  margin: -4em 1em 1em 11.5em;
+}
+
 .home-LB{
   background-color: #85CA57;
   width: 400px auto;
@@ -78,8 +85,8 @@ section {
 }
 .home-RB{
   background-color: black;
-  width:400px;
-  height: 400px;
+  width:370px;
+  height: 380px;
   padding: .5em;
   margin:1em auto;
 }
