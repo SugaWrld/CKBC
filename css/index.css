@@ -23,6 +23,17 @@ body {
   margin: -10em 1em 1em 10em;
 }
 
+button{
+  border-radius: 3em;
+  background-color: transparent;
+  border-color: red;
+  font-weight: bold;
+  font-size: 25px;
+}
+button :hover{
+  color: red;
+}
+
 .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,14 +45,7 @@ body {
   cursor: pointer;
 }
 
-#language{
-  background-color: transparent;
-  font-family: 'Fredoka';
-  font-size: 20px;
-  margin-top: 0em;
-  border-color: transparent;
-  border-radius: 1em;
-}
+
 a {
   color: black;
 }
@@ -199,17 +203,6 @@ nav li a:hover {
   }
   .navbar nav ul.primary-nav {
     margin: 0;
-  }
-  .navbar nav li.go-vist-cta a {
-    color: gray;
-    border: 3px solid gray;
-    font-weight: bold;
-    border-radius: 5em;
-    margin-top: -.2em;
-  }
-  .navbar nav li.go-vist-cta a:hover {
-    background: gray;
-    color: white;
   }
   
   .bottom{

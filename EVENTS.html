@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">   
     <link rel="stylesheet" href="css/index.css">
+
     <title>Canaan Kachin Baptist Church</title>
 </head>
 <body>
@@ -22,21 +23,16 @@
                 <img id="exit" class="menu-exit" src="assets/exit.svg" alt="menu">
 
                 <ul class="primary-nav">
-                    <li><a href="index.html" alt="home">HOME</a></li>
-                    <li><a href="EVENTS.html" alt="events"><b>EVENTS</b></a></li>
-                    <li><a href="CONTACT.html" alt="contact">CONTACT</a></li>
-                    <li><a href="ABOUT.html" alt="about us">ABOUT</a></li>
+                    <li><a href="index.html" id="home-btn" alt="home">HOME</a></li>
+                    <li><a href="EVENTS.html" id="event-btn" alt="events"><b>EVENTS</b></a></li>
+                    <li><a href="CONTACT.html" id="contact-btn" alt="contact">CONTACT</a></li>
+                    <li><a href="ABOUT.html" id="about-btn" alt="about us">ABOUT</a></li>
                 </ul>
 
                 <ul class="secondary-nav">
-                    <li class="go-vist-cta"><a href="#">VIST US</a></li>
+                    <button id="translate-Kachin" onclick="kachinTranslationEvents()">Kachin</button>
                 </ul>
                 
-                <select id="language">
-                    <option value="0">English</option>
-                    <option value="1">Kachin</option>
-                    <option value="2">Burmese</option>
-                </select>
                 <div id="google_translate_element"></div>
             </nav>
         </div>
@@ -44,7 +40,7 @@
 
         <section class="eventLists">
             <div class="container">
-                <p style="color:red">There is no event for this week.</p>
+                <p id="event-list" style="color:red">Church worship time: 4:00PM - 6:00PM (ETS)</p>
             </div>
         </section>
 
@@ -74,7 +70,7 @@
             nav.classList.remove('menu-btn');
         })
 
-
         </script>
+        <script src="index.js"></script>
 </body>
 </html>

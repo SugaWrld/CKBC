@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">   
     <link rel="stylesheet" href="css/index.css">
-    <link rel="script" href="js/index.js">
+
     <title>Canaan Kachin Baptist Church</title>
 </head>
 <body>
@@ -23,18 +23,16 @@
                 <img id="exit" class="menu-exit" src="assets/exit.svg" alt="menu">
 
                 <ul class="primary-nav">
-                    <li><a href="index.html" alt="home"><b>HOME</b></a></li>
-                    <li><a href="EVENTS.html" alt="events">EVENTS</a></li>
-                    <li><a href="CONTACT.html" alt="contact">CONTACT</a></li>
-                    <li><a href="ABOUT.html" alt="about us">ABOUT</a></li>
-                    
-                <select id="language" onselect="language()">
-                    <option value="0">English</option>
-                    <option value="1">Kachin</option>
-                    <option value="2">Burmese</option>
-                </select>
-                <div id="google_translate_element"></div>
+                    <li><a href="index.html" id="home-btn" alt="home"><b>HOME</b></a></li>
+                    <li><a href="EVENTS.html" id="event-btn" alt="events">EVENTS</a></li>
+                    <li><a href="CONTACT.html" id="contact-btn" alt="contact">CONTACT</a></li>
+                    <li><a href="ABOUT.html" id="about-btn" alt="about us">ABOUT</a></li>
                 </ul>
+                    
+                <ul class="secondary-nav">
+                     <button id="translate-Kachin" onclick="kachinTranslationHome()">Kachin</button>
+                </ul>
+                <div id="google_translate_element"></div>
                 
             </nav>
         </div>
@@ -42,8 +40,8 @@
 
         <section class="welcome">
             <div class="welcomeContainer">
-                <h1 style="font-family:'Times New Roman', Times, serif"> Growing in grace and knowledge of the Lord Jesus</h1>
-                <h2>2 Peter 3:18</h2>
+                <h1 id="scripture" style="font-family:'Times New Roman', Times, serif"><q>Growing in grace and knowledge of the Lord Jesus.</h1>
+                <h2 id="verse" style="font-family:'Times New Roman', Times, serif">(II Peter 3:18)</h2>
             </div>
         </section>
         <div class="container">
@@ -95,8 +93,7 @@
             exitBtn.addEventListener('click', () => {
             nav.classList.remove('menu-btn');
         })
-
-
         </script>
+        <script src="index.js"></script>
 </body>
 </html>
